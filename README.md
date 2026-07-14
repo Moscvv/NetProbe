@@ -1,4 +1,4 @@
-# NetProbe 🔍
+# NetProbe 
 
 A command-line network reconnaissance tool built in Python.  
 Performs **host discovery**, **port scanning**, and **service banner grabbing** — the first three steps of any penetration test or network audit.
@@ -22,7 +22,7 @@ Performs **host discovery**, **port scanning**, and **service banner grabbing** 
 
 ## Why I built this
 
-This project is part of my cybersecurity portfolio. The goal was to understand what tools like **Nmap** are actually doing under the hood — crafting ICMP packets with `struct`, managing raw sockets, and building a threaded scanner from scratch. Writing it myself forced me to understand TCP handshakes, ICMP checksums, and banner protocols in a way that reading about them doesn't.
+This project is part of my cybersecurity portfolio. The goal was to understand what tools like **Nmap** are actually doing under the hood — crafting ICMP packets with `struct`, managing raw sockets, and building a threaded scanner from scratch. Writing it forced me to understand TCP handshakes, ICMP checksums, and banner protocols in a way that reading about them doesn't.
 
 ---
 
@@ -152,5 +152,4 @@ Nmap is the right tool for real engagements. NetProbe is for understanding how i
 
 ## Author
 
-[Your Name] — Cybersecurity student, Australia → Japan  
-[LinkedIn] | [GitHub]
+Joaquin Perez Silva...  
