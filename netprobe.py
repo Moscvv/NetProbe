@@ -6,7 +6,7 @@ NetProbe - Network Reconnaissance Tool
 A CLI tool for host discovery, port scanning, and service banner grabbing.
 Built as a cybersecurity portfolio project.
 
-Author: [Your Name]
+Author: Joaquin Perez Silva
 Usage:  sudo python3 netprobe.py --target 192.168.1.1
         sudo python3 netprobe.py --target 192.168.1.0/24 --ports 22,80,443
         sudo python3 netprobe.py --target scanme.nmap.org --ports 1-1000
@@ -74,7 +74,7 @@ def icmp_ping(host: str, timeout: float = 1.0) -> bool:
     """
     Send a single ICMP Echo Request and return True if we get a reply.
 
-    Why raw sockets?  Normal sockets are TCP/UDP — they work at the
+    Using RAW sockets because  Normal sockets are TCP/UDP — they work at the
     transport layer.  ICMP lives at the network layer, so we need
     socket.SOCK_RAW to bypass the transport layer entirely.
     """
